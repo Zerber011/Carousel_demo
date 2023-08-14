@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* MAIN COL0R #087F5B */
+/* TEXT COLOR #343A40 */
+/* ------------------------ */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #343a40;
+  line-height: 1.2;
+}
+
+.carousel {
+  position: relative;
+  background-color: #087f5b;
+  width: 800px;
+  margin: 100px auto;
+
+  /* padding-left: 76px;  need to be bigger couse of picture scaling */
+  padding: 32px 48px 32px 76px;
+  border-radius: 8px;
+  /* Using Flex in order to put element side by side */
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
+img {
+  height: 200px;
+  border-radius: 8px;
+  /* TO INCRESE DIMENSION OF PICS... */
+  transform: scale(1.5);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #e6fcf5;
+}
+.testimonial-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #c3fae8;
+}
+.testimonial-job {
+  font-size: 12px;
+  color: #c3fae8;
+}
+
+/* Errows controls carousel */
+
+.btn {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+  border-color: #fff;
+  border: none; /* necessery */
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #087f5b;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0; /* Putting dots wright at the botom */
+  transform: translate(-50%, 32px);
+  /* Second value is the vertical one ( 32 ) */
+
+  /* In order to put gap among the dost > */
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* fill up with #green color first dot. */
+
+.dot-fill {
+  background-color: #087f5b;
+}
